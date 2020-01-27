@@ -9,4 +9,6 @@ mongoose.Error.messages.Number.max =
 mongoose.Error.messages.String.enum =
   "'{VALUE}' não é válido para o atributo '{PATH}'.";
 
-module.exports = mongoose.connect('mongodb://localhost/mymoney');
+module.exports = mongoose.connect('mongodb://localhost/mymoney', {
+  useNewUrlParser: true,
+});
